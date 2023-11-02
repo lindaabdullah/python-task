@@ -4,4 +4,4 @@ To run server, go to backend directory and run "python manage.py runserver"
 
 To run client, go to py-client directory and run "python basic.py"
 
-
+The code for the endpoint is in backend\api\views.py
