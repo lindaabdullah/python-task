@@ -1,0 +1,7 @@
+To Activate virtual env: .\.venv\Scripts\activate
+
+To run server, go to backend directory and run "python manage.py runserver"
+
+To run client, go to py-client directory and run "python basic.py"
+
+
