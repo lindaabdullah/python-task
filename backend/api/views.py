@@ -16,14 +16,10 @@ payload = {
     "password": "1"
 }
 
-def get_info_from_baubuddy(url, headers):
-    response = requests.request("GET", url, headers=headers)
-    return JsonResponse(response)
-
 @csrf_exempt
 def api_csv(request, *args, **kwargs):
     body = request.body
-    data = {}
+
     if body != None:
 
         csv_data = json.loads(json.loads(body))  # string of json data -> py dict
