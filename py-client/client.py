@@ -8,7 +8,7 @@ from openpyxl.styles import PatternFill
 from openpyxl.utils.dataframe import dataframe_to_rows
 
 # Take command-line arguements 
-parser = argparse.ArgumentParser(description="Take an input parameter -k/--keys that can receive an arbitrary amount of string arguments; Take an input parameter -c/--colored that receives a boolean flag and defaults to True")
+parser = argparse.ArgumentParser()
 parser.add_argument('-k', '--keys', nargs='+')      # option that takes a value
 parser.add_argument('-c', '--colored', action='store_true')
 args = parser.parse_args()
