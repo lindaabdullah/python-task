@@ -25,8 +25,6 @@ pd_json = pd_csv.to_json(orient='records', force_ascii=False)
 r = requests.post(url="http://127.0.0.1:8000/api/sendcsv", json=pd_json)
 response = r.json()
 
-with open("resulttext.txt", 'w') as f:
-    f.write(json.dumps(response))
 
 excel_df = pd.DataFrame(response['body'])
 excel_df = excel_df.sort_values('gruppe')
